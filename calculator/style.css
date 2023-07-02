@@ -1,3 +1,5 @@
+li { list-style-type: none;}
+li a {text-decoration: none;}
 .calculator {
     width: 350px;
     margin: 0 auto;
