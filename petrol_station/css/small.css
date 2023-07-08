@@ -51,6 +51,7 @@ nav ul.open {
 .header {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  
 }
 .one {
   display: flex;
@@ -60,4 +61,25 @@ nav ul.open {
 .main-image img {
   max-width: 300px;
 }
-h3{text-align: center;}
+h1, h2, h3 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: 400;
+}
+.login {
+  background-color: rgb(44, 6, 13);
+  width: 5rem;  
+  border-radius: 2rem;  
+  margin: 3vw;
+  text-align: center;
+}
+.login a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+
