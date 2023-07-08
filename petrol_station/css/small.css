@@ -22,9 +22,8 @@ nav ul li a {
 nav ul li.active a {
   background-color: #c7c2be;
   color: rgb(15, 15, 15);
-  
 }
-nav ul li a:hover {
+hover ul li a:hover {
   background-color: #613809;
 }
 nav ul {
@@ -51,7 +50,6 @@ nav ul.open {
 .header {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  
 }
 .one {
   display: flex;
@@ -61,8 +59,10 @@ nav ul.open {
 .main-image img {
   max-width: 300px;
 }
-h1, h2, h3 {
-  font-family: 'Times New Roman', Times, serif;
+h1,
+h2,
+h3 {
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
 }
 p {
@@ -72,8 +72,8 @@ p {
 }
 .login {
   background-color: rgb(44, 6, 13);
-  width: 5rem;  
-  border-radius: 2rem;  
+  width: 5rem;
+  border-radius: 2rem;
   margin: 3vw;
   text-align: center;
 }
@@ -82,4 +82,41 @@ p {
   display: inline-block;
   text-decoration: none;
 }
+/* --------Register PAGE */
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;  
+  border-radius: 5px;
+}
+
+.group {
+  margin-bottom: 20px;
+}
+
+.group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button {
+  text-align: center;
+  background-color: rgb(44, 6, 13);
+  color: #fff;
+  cursor: pointer;  
+  border-radius: 2rem;
+  width: 100%; 
+  padding: .75rem 1.5rem; 
+ margin: 1vw;
+}
+.error-message { color: #c7c2be;}
+
 

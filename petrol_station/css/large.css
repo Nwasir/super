@@ -1,32 +1,27 @@
 @media screen and (min-width: 500px) {
-    nav button {
-        display: none;
-    }
-    .header {
-        display: grid;
-        grid-template-columns: 2fr  2fr;
-
-    }
-    nav ul {
-        display: flex;
-
-    }
-    nav ul li a {
-        border: none;
-       }
-       #content {
-        max-width: 800;
-        background-color: white;
-        
-       }
-       body {background-color: aqua;}
-       .main-image img {
-        max-width: 1250px;
-        margin: 3vw;
-       }
-       .paragraph p{
-        margin: 2vw;
-       }
-       
-    
+  nav button {
+    display: none;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li a {
+    border: none;
+  }
+  #content {
+    max-width: 800;
+    background-color: white;
+  }
+ 
+  .main-image img {
+    max-width: 1250px;
+    margin: 3vw;
+  }
+  .paragraph p {
+    margin: 2vw;
+  }
 }

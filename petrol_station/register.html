@@ -4,36 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
+    <link rel="stylesheet" href="/petrol_station/css/small.css" />
+    <link rel="stylesheet" href="/petrol_station/css/large.css" />
+    <script defer src="/petrol_station/script/hamburger.js"></script>
+    <script defer src="/petrol_station/script/register.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h2>Register</h2>
-      <form>
-        <div class="form-group">
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" required />
+    <div id="content">
+      <header>
+        <div class="header">
+          <div class="one">
+            <picture class="logo"
+              ><a href="/petrol_station/index.html"
+                ><img
+                  src="images/logo.jpeg"
+                  alt="logo"
+                  width="60"
+                  height="60" /></a
+            ></picture>
+            <div><h2>FSAudit</h2></div>
+          </div>
+
+          <nav>
+            <button id="hamburgerBtn">
+              <span>&#9776;</span><span>x</span>
+            </button>
+
+            <ul id="primaryNav">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="register.html">Register</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required />
-        </div>
-        <div class="form-group">
-          <label for="confirm-password">Confirm Password</label>
-          <input
-            type="password"
-            id="confirm-password"
-            name="confirm-password"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <input type="submit" value="Register" />
-        </div>
-      </form>
+      </header>
+      <div class="form">
+        <h2>Register</h2>
+        <form>
+          <div class="group">
+            <label for="username">Username*</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="group">
+            <label for="filling_station">Filling Station*</label>
+            <input
+              type="text"
+              id="filling_station"
+              name="filling_station"
+              required
+            />
+          </div>
+          <div class="group">
+            <label for="position">Positon*</label>
+            <input type="text" id="position" name="position" required />
+          </div>
+          <div class="group">
+            <label for="password">Password*</label>
+            <input type="password" id="password" name="password" required />
+            <span class="error-message"
+              >Password must contain a capital letter, a number, a special
+              character, and be at least 8 characters long.</span
+            >
+          </div>
+          <div class="group">
+            <label for="confirm-password">Confirm Password*</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+            <span class="error-message">Passwords do not match.</span>
+          </div>
+          <div class="submit-button">
+            <input type="submit" value="Register" class="button" />
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
