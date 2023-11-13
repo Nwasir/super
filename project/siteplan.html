@@ -6,11 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site Plan</title>
     <style>
-        header{
+        *{
+            background-color: #62c48e;
+        }
+        header, h1{
             background-color: black;
             color: white;
             height: 50px;
         }
+       h1, h2{
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+       }
+       p{
+        font-family: Arial, Helvetica, sans-serif;
+       }
     </style>
 </head>
 
@@ -74,6 +84,36 @@
             fashion needs of its customers while contributing to the economic
             growth of the region.</p>
     </section>
+    <section>
+        <h2>Typography</h2>
+        <p><strong>For heading:</strong> Times New Roman, Times, serif </p>
+        <p><strong>for paragraph:</strong>  Arial, Helvetica, sans-serif</p>
+    </section>
+    <section>
+        <h2>Color Pallete</h2>
+        <img src="images/color-pallete.PNG" alt="color Pallete">
+    </section>
+    <section>
+        <h2>Wireframe</h2>
+        <div>
+            <p>Homepage Wireframe</p>
+            <img src="images/homepage.jpeg" alt="homepage Wireframe">
+        </div>
+        <div>
+            <p>All page Wireframe</p>
+            <img src="images/all.jpeg" alt="all pages">
+        </div>
+        <div>
+            <p>shirts, trousers, suits agbada caps and shoes Wireframe</p>
+            <img src="images/subpage.jpeg" alt="subpages">
+        </div>
+    </section>
+    <footer>
+        &copy;<span id="year"></span> My project
+      </footer>
+      <script>
+        document.querySelector("#year").innerHTML = new Date().getFullYear();
+      </script>
 
 </body>
 
