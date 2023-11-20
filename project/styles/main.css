@@ -61,7 +61,7 @@ h1, h2, h3{
 }
 #content {
   /* border: 2px red solid; */
-  background-color: #62c48e;
+  background-color: #9debc0;
   border-radius: .5rem;
 }
 /* #double{
@@ -95,4 +95,20 @@ h1, h2, h3{
 #first{
   border: 2px solid black;
   border-radius: .5rem;
+}
+
+/* animation */
+.animation {
+  overflow: hidden;
+  position: relative;
+}
+.images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.images.active{
+  opacity: 1;
 }

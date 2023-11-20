@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script defer src="scripts/hamburger.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+    <!-- <script defer src="scripts/weather.js"></script> -->
 </head>
 
 <body>
@@ -31,14 +33,19 @@
                     <ul id="primaryNav">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="register.html">Register</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="shirts.html">Shirts</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="suits.html">Suits</a></li>
+                        <li><a href="trousers.html">Trousers</a></li>
+                        <li><a href="agbada.html">Agbada</a></li>
+                        <li><a href="senator.html">Senators</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <hr>
         <main id="center">
-            <div id="first">1</div>
+            <div id="first" class="animation">1</div>
             <div class="box" id="shirt">
                 <h2>Shirt</h2>
                 <a href="shirts.html"><img src="images/shirt1.jpg" alt="shirt"></a>
@@ -53,26 +60,36 @@
             </div>
             <div class="box" id="suit">
                 <h2>Suit</h2><br>
-                <a href="suits.html"><img src="images/suit1.jpg" alt="suit" ></a>
+                <a href="suits.html"><img src="images/suit1.jpg" alt="suit"></a>
             </div>
             <div class="box" id="weather">
                 <h2>Weather</h2>
+                <figure>
+                    <img src="" alt="" id="weather-icon" /><label><span id="tempF"></span> &deg;C</label>
+                    <figcaption></figcaption>
+                </figure>
+                <hr>
+
+                <label>Wind Speed: <span id="speed"></span> km/h</label><br><br>
+                <label>Wind Chill: <span id="windchill"></span></label>
+
             </div>
             <div class="box" id="shoes">
                 <h2>Shoes</h2>
-                <a href="shoes.html"><img src="images/shoe6.jpg" alt="shoes" ></a>
+                <a href="shoes.html"><img src="images/shoe6.jpg" alt="shoes"></a>
             </div>
             <div id="text">
                 <p>remind me to add something</p>
             </div>
 
-        </main><hr>
+        </main>
+        <hr>
         <footer>
             &copy;<span id="year"></span> Nnanna Arua Uko
-          </footer>
-          <script>
+        </footer>
+        <script>
             document.querySelector("#year").innerHTML = new Date().getFullYear();
-          </script>
+        </script>
     </div>
 </body>
 
