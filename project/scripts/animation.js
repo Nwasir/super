@@ -4,6 +4,7 @@ export async function fetchImages() {
     try {
       const response = await fetch(url);
       const data = await response.json();
+      console.log(url);
       return data.images;
     } catch (error) {
       console.error("Error fetching images:", error);
@@ -12,7 +13,7 @@ export async function fetchImages() {
   }
   
   export function initializeAnimation(images) {
-    const animationContainer = document.getElementById("animation-container");
+    const animationContainer = document.querySelector("#animation");
     let currentIndex = 0;
   
     images.forEach((imageUrl, index) => {

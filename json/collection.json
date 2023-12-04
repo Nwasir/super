@@ -1,367 +1,368 @@
- [
+ { "clothing": [
       {
         "name": "Shirts",
-        "images": "images/shirt1.jpg",
+        "images": "../json/images/shirt1.jpg",
         "prices": 20,
         "sizes": "M"
       },
       {
         "name": "Shirts",
-        "images": "images/shirt2.jpg",
+        "images": "../json/images/shirt2.jpg",
         "prices": 23,
         "sizes": "M"
       },
       {
         "name": "Shirts",
-        "images": "images/shirt3.jpg",
+        "images": "../json/images/shirt3.jpg",
         "prices": 24,
         "sizes": "L"
       },
       {
         "name": "Shirts",
-        "images": "images/shirt4.jpg",
+        "images": "../json/images/shirt4.jpg",
         "prices": 25,
         "sizes": "XL"
       },
       {
         "name": "Shirts",
-        "images": "images/shirt5.jpg",
+        "images": "../json/images/shirt5.jpg",
         "prices": 26,
         "sizes": "XL"
       },
       {
         "name": "Shirts",
-        "images": "images/shirt6.jpg",
+        "images": "../json/images/shirt6.jpg",
         "prices": 27,
         "sizes": "L"
       },
       {
         "name": "Shirts",
-        "images": "images/shirt7.jpg",
+        "images": "../json/images/shirt7.jpg",
         "prices": 28,
         "sizes": "XXL"
       },
       {
         "name": "Shirts",
-        "images": "images/shirt8.jpg",
+        "images": "../json/images/shirt8.jpg",
         "prices": 28,
         "sizes": "XXXL"
       },
       {
         "name": "Shirts",
-        "images": "images/shirt9.jpg",
+        "images": "../json/images/shirt9.jpg",
         "prices": 28,
         "sizes": "XXXL"
       },
       {
         "name": "Shirts",
-        "images": "images/shirt10.jpg",
+        "images": "../json/images/shirt10.jpg",
         "prices": 28,
         "sizes": "XXL"
       },      
       {
         "name": "Suit",
-        "images": "images/suit1.jpg",
+        "images": "../json/images/suit1.jpg",
         "prices": 28,
         "sizes": "M"
       },
       {
         "name": "Suit",
-        "images": "images/suit2.jpg",
+        "images": "../json/images/suit2.jpg",
         "prices": 28,
         "sizes": "M"
       },
       {
         "name": "Suit",
-        "images": "images/suit3.jpg",
+        "images": "../json/images/suit3.jpg",
         "prices": 28,
         "sizes": "L"
       },
       {
         "name": "Suit",
-        "images": "images/suit4.jpg",
+        "images": "../json/images/suit4.jpg",
         "prices": 28,
         "sizes": "L"
       },
       {
         "name": "Suit",
-        "images": "images/suit5.jpg",
+        "images": "../json/images/suit5.jpg",
         "prices": 28,
         "sizes": "XL"
       },
 
       {
         "name": "Suit",
-        "images": "images/suit6.jpg",
+        "images": "../json/images/suit6.jpg",
         "prices": 28,
         "sizes": "XL"
       },
       {
         "name": "Suit",
-        "images": "images/suit7.jpg",
+        "images": "../json/images/suit7.jpg",
         "prices": 28,
         "sizes": "XXL"
       },
       {
         "name": "Suit",
-        "images": "images/suit8.jpg",
+        "images": "../json/images/suit8.jpg",
         "prices": 28,
         "sizes": "XXL"
       },
       {
         "name": "Suit",
-        "images": "images/suit9.jpg",
+        "images": "../json/images/suit9.jpg",
         "prices": 28,
         "sizes": "XXXL"
       },
       {
         "name": "Suit",
-        "images": "images/suit10.jpg",
+        "images": "../json/images/suit10.jpg",
         "prices": 28,
         "sizes": "XXXL"
       },
       {
         "name": "Trousers",
-        "images": "images/trousers10.jpg",
+        "images": "../json/images/trousers1.jpg",
         "prices": 20,
         "sizes": "M"
       },
       {
         "name": "Trousers",
-        "images": "images/trousers3.jpg",
+        "images": "../json/images/trousers2.jpg",
         "prices": 20,
         "sizes": "M"
       },
       {
         "name": "Trousers",
-        "images": "images/trousers3.jpg",
+        "images": "../json/images/trousers3.jpg",
         "prices": 22,
         "sizes": "L"
       },
       {
         "name": "Trousers",
-        "images": "images/trousers4.jpg",
+        "images": "../json/images/trousers4.jpg",
         "prices": 22,
         "sizes": "L"
       },
       {
         "name": "Trousers",
-        "images": "images/trousers5.jpg",
+        "images": "../json/images/trousers5.jpg",
         "prices": 23,
         "sizes": "XL"
       },
       {
         "name": "Trousers",
-        "images": "images/trousers6.jpg",
+        "images": "../json/images/trousers6.jpg",
         "prices": 23,
         "sizes": "XL"
       },
       {
         "name": "Trousers",
-        "images": "images/trousers7.jpg",
+        "images": "../json/images/trousers7.jpg",
         "prices": 25,
         "sizes": "XXL"
       },
       {
         "name": "Trousers",
-        "images": "images/trousers8.jpg",
+        "images": "../json/images/trousers8.jpg",
         "prices": 25,
         "sizes": "XXL"
       },
       {
         "name": "Trousers",
-        "images": "images/trousers9.jpg",
+        "images": "../json/images/trousers9.jpg",
         "prices": 28,
         "sizes": "XXXL"
       },
       {
         "name": "Trousers",
-        "images": "images/trousers10.jpg",
+        "images": "../json/images/trousers10.jpg",
         "prices": 28,
         "sizes": "XXXL"
       },
       {
         "name": "Shoes",
-        "images": "images/shoe1.jpg",
+        "images": "../json/images/shoe1.jpg",
         "prices": 22,
         "sizes": "40"
       },
       {
         "name": "Shoes",
-        "images": "images/shoe2.jpg",
+        "images": "../json/images/shoe2.jpg",
         "prices": 22,
         "sizes": "40"
       },
       {
         "name": "Shoes",
-        "images": "images/shoe3.jpg",
+        "images": "../json/images/shoe3.jpg",
         "prices": 26,
         "sizes": "42"
       },
       {
         "name": "Shoes",
-        "images": "images/shoe4.jpg",
+        "images": "../json/images/shoe4.jpg",
         "prices": 26,
         "sizes": "42"
       },
       {
         "name": "Shoes",
-        "images": "images/shoe5.jpg",
+        "images": "../json/images/shoe5.jpg",
         "prices": 27,
         "sizes": "43"
       },
       {
         "name": "Shoes",
-        "images": "images/shoe6.jpg",
+        "images": "../json/images/shoe6.jpg",
         "prices": 27,
         "sizes": "43"
       },
       {
         "name": "Shoes",
-        "images": "images/shoe7.jpg",
+        "images": "../json/images/shoe7.jpg",
         "prices": 22,
         "sizes": "38"
       },
       {
         "name": "Shoes",
-        "images": "images/shoe8.jpg",
+        "images": "../json/images/shoe8.jpg",
         "prices": 22,
         "sizes": "38"
       },
       {
         "name": "Shoes",
-        "images": "images/shoe9.jpg",
+        "images": "../json/images/shoe9.jpg",
         "prices": 28,
         "sizes": "44"
       },
       {
         "name": "Shoes",
-        "images": "images/shoe10.jpg",
+        "images": "../json/images/shoe10.jpg",
         "prices": 28,
         "sizes": "44"
       },
       {
         "name": "agbada",
-        "images": "images/senator1.jpg",
+        "images": "../json/images/agbada1.jpg",
         "prices": 22,
         "sizes": "M"
       },
       {
         "name": "agbada",
-        "images": "images/senator2.jpg",
+        "images": "../json/images/agbada2.jpg",
         "prices": 24,
         "sizes": "L"
       },
       {
         "name": "agbada",
-        "images": "images/senator3.jpg",
+        "images": "../json/images/agbada3.jpg",
         "prices": 26,
         "sizes": "XL"
       },
       {
         "name": "agbada",
-        "images": "images/senator4.jpg",
+        "images": "../json/images/agbada4.jpg",
         "prices": 28,
         "sizes": "XXL"
       },
       {
         "name": "agbada",
-        "images": "images/agbada5.jpg",
+        "images": "../json/images/agbada5.jpg",
         "prices": 30,
         "sizes": "XXXL"
       },
       {
         "name": "agbada",
-        "images": "images/agbada6.jpg",
+        "images": "../json/images/agbada6.jpg",
         "prices": 22,
         "sizes": "M"
       },
       {
         "name": "agbada",
-        "images": "images/agbada7.jpg",
+        "images": "../json/images/agbada7.jpg",
         "prices": 24,
         "sizes": "L"
       },
       {
         "name": "agbada",
-        "images": "images/agbada8.jpg",
+        "images": "../json/images/agbada8.jpg",
         "prices": 26,
         "sizes": "XL"
       },
       {
         "name": "agbada",
-        "images": "images/agbada9.jpg",
+        "images": "../json/images/agbada9.jpg",
         "prices": 28,
         "sizes": "XXL"
       },
       {
         "name": "agbada",
-        "images": "images/agbada10.jpg",
+        "images": "../json/images/agbada10.jpg",
         "prices": 30,
         "sizes": "XXXL"
       },
       {
         "name": "senator",
-        "images": "images/senator1.jpg",
-        "prices": 22,
-        "sizes": "M"
-      },
-      {
-        "name": "senator",
-        "images": "images/senator2.jpg",
+        "images": "../json/images/senator1.jpg",
         "prices": 24,
         "sizes": "L"
       },
       {
         "name": "senator",
-        "images": "images/senator3.jpg",
+        "images": "../json/images/senator2.jpg",
+        "prices": 24,
+        "sizes": "L"
+      },
+      {
+        "name": "senator",
+        "images": "../json/images/senator3.jpg",
         "prices": 26,
         "sizes": "XL"
       },
       {
         "name": "senator",
-        "images": "images/senator4.jpg",
+        "images": "../json/images/senator4.jpg",
         "prices": 28,
         "sizes": "XXL"
       },
       {
         "name": "senator",
-        "images": "images/senator5.jpg",
+        "images": "../json/images/senator5.jpg",
         "prices": 30,
         "sizes": "XXXL"
       },
       {
         "name": "senator",
-        "images": "images/senator6.jpg",
+        "images": "../json/images/senator6.jpg",
         "prices": 22,
         "sizes": "M"
       },
       {
         "name": "senator",
-        "images": "images/senator7.jpg",
+        "images": "../json/images/senator7.jpg",
         "prices": 24,
         "sizes": "L"
       },
       {
         "name": "senator",
-        "images": "images/senator8.jpg",
+        "images": "../json/images/senator8.jpg",
         "prices": 26,
         "sizes": "XL"
       },
       {
         "name": "senator",
-        "images": "images/senator9.jpg",
+        "images": "../json/images/senator9.jpg",
         "prices": 28,
         "sizes": "XXL"
       },
       {
         "name": "senator",
-        "images": "images/senator10.jpg",
+        "images": "../json/images/senator10.jpg",
         "prices": 30,
         "sizes": "XXXL"
       }
       
   ]
+}
   
   
   

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jimex Collection</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script defer src="scripts/hamburger.js"></script>
+    <script defer src="scripts/market.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div class="header">
+                <div class="one">
+                    <picture class="logo"><a href="index.html"><img src="images/logo.PNG" alt="logo" width="60"
+                                height="60" /></a></picture>
+                    <div>
+                        <h2>JCS</h2>
+                    </div>
+                </div>
+
+                <nav>
+                    <button id="hamburgerBtn">
+                        <span>&#9776;</span><span>x</span>
+                    </button>
+
+                    <ul id="primaryNav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="market.html">Market</a></li>
+
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <article>
+            <h2>Select your outfit</h2>
+            <div id="sortBy">
+                <p><strong>Select base on price:</strong></p>
+                <label><input type="radio" id="shirt" name="clothing" value="shirt">shirt</label>
+                <label><input type="radio" id="suit" name="clothing" value="suit">suit</label>
+                <label><input type="radio" id="agbada" name="clothing" value="agbada">Agbada</label>
+                <label><input type="radio" id="trousers" name="clothing" value="trousers">Trousers</label>
+                <label><input type="radio" id="senator" name="clothing" value="senator">Senator</label>
+                <label><input type="radio" id="shoes" name="clothing" value="shoes">Shoes</label>
+                <label><input type="radio" id="all" name="clothing" value="all">All</label>
+            </div>
+            <div id="outfit"></div>
+        </article>
+        <!-- <section>
+            <div id="item-images">
+                <a href="#"><img src="images/agbada1.jpg" alt="agbada" width="300" height="300"></a>
+                <a href="#"><img src="images/agbada2.jpg" alt="agbada" width="300" height="300"></a>
+                <a href="#"><img src="images/shirt1.jpg" alt="shirt" width="300" height="300"></a>
+                <a href="#"><img src="images/shirt2.jpg" alt="shirt" width="300" height="300"></a>
+                <a href="#"><img src="images/suit3.jpg" alt="suit" width="300" height="300"></a>
+                <a href="#"><img src="images/suit4.jpg" alt="suit" width="300" height="300"></a>
+                <a href="#"><img src="images/trousers1.jpg" alt="trousers" width="300" height="300"></a>
+                <a href="#"><img src="images/trousers2.jpg" alt="trousers" width="300" height="300"></a>
+                <a href="#"><img src="images/senator3.jpg" alt="senator" width="300" height="300"></a>
+                <a href="#"><img src="images/senator4.jpg" alt="senator" width="300" height="300"></a>
+
+            </div>
+        </section> -->
+        <!-- <section>
+            <div id="item-images">
+                <div class="clothing-item">
+                    <a href="#"><img src="images/agbada1.jpg" alt="agbada" width="300" height="300"></a>
+                    <p class="item-details" data-name="Agbada 1" data-price="50" data-size="Medium">Price: $50 | Size: Medium</p>
+                </div>
+                <div class="clothing-item">
+                    <a href="#"><img src="images/agbada2.jpg" alt="agbada" width="300" height="300"></a>
+                    <p class="item-details" data-name="Agbada 2" data-price="50" data-size="Medium">Price: $50 | Size: Medium</p>
+                </div>
+        </section> -->
+        <footer>
+            &copy;<span id="year"></span> Nnanna Arua Uko
+        </footer>
+        <script>
+            document.querySelector("#year").innerHTML = new Date().getFullYear();
+        </script>
+    </div>
+</body>
+
+</html>
