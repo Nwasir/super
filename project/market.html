@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script defer src="scripts/hamburger.js"></script>
-    <script defer src="scripts/market.js"></script>
+    <script type="module" src="scripts/market.js" defer></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                 </nav>
             </div>
         </header>
-        <article>
+        <main>
             <h2>Select your outfit</h2>
             <div id="sortBy">
                 <p><strong>Select base on price:</strong></p>
@@ -49,35 +49,10 @@
                 <label><input type="radio" id="senator" name="clothing" value="senator">Senator</label>
                 <label><input type="radio" id="shoes" name="clothing" value="shoes">Shoes</label>
                 <label><input type="radio" id="all" name="clothing" value="all">All</label>
-            </div>
+            </div><br>
             <div id="outfit"></div>
-        </article>
-        <!-- <section>
-            <div id="item-images">
-                <a href="#"><img src="images/agbada1.jpg" alt="agbada" width="300" height="300"></a>
-                <a href="#"><img src="images/agbada2.jpg" alt="agbada" width="300" height="300"></a>
-                <a href="#"><img src="images/shirt1.jpg" alt="shirt" width="300" height="300"></a>
-                <a href="#"><img src="images/shirt2.jpg" alt="shirt" width="300" height="300"></a>
-                <a href="#"><img src="images/suit3.jpg" alt="suit" width="300" height="300"></a>
-                <a href="#"><img src="images/suit4.jpg" alt="suit" width="300" height="300"></a>
-                <a href="#"><img src="images/trousers1.jpg" alt="trousers" width="300" height="300"></a>
-                <a href="#"><img src="images/trousers2.jpg" alt="trousers" width="300" height="300"></a>
-                <a href="#"><img src="images/senator3.jpg" alt="senator" width="300" height="300"></a>
-                <a href="#"><img src="images/senator4.jpg" alt="senator" width="300" height="300"></a>
-
-            </div>
-        </section> -->
-        <!-- <section>
-            <div id="item-images">
-                <div class="clothing-item">
-                    <a href="#"><img src="images/agbada1.jpg" alt="agbada" width="300" height="300"></a>
-                    <p class="item-details" data-name="Agbada 1" data-price="50" data-size="Medium">Price: $50 | Size: Medium</p>
-                </div>
-                <div class="clothing-item">
-                    <a href="#"><img src="images/agbada2.jpg" alt="agbada" width="300" height="300"></a>
-                    <p class="item-details" data-name="Agbada 2" data-price="50" data-size="Medium">Price: $50 | Size: Medium</p>
-                </div>
-        </section> -->
+        </main>
+      
         <footer>
             &copy;<span id="year"></span> Nnanna Arua Uko
         </footer>
