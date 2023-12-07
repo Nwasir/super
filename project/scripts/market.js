@@ -1,5 +1,4 @@
 // market.js
-
 import { displayItems, getItems } from "./marketFunctions.js";
 
 // Declare and initialize global variables
