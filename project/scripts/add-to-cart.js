@@ -1,18 +1,17 @@
-import { getCartFromLocalStorage, saveCartToLocalStorage } from "./storage";
+// addToCart.js
 
-let cart = [];
-let cartIconCallback = null;
+import { getCartFromLocalStorage, saveCartToLocalStorage } from "./storage.js";
+import { updateCartCount } from "./cart-icon.js";
 
-function setCartIconCallback(callback) {
-    cartIconCallback = callback;
-}
+let cart = getCartFromLocalStorage();
 
 function addToCart(item) {
     cart.push(item);
     console.log(`Added "${item.name}" to the cart.`);
-    if (cartIconCallback) {
-        cartIconCallback(cart.length);
-    }
+    saveCartToLocalStorage(cart);
+
+    // Trigger cart count update
+    updateCartCount();
 }
 
 function getCart() {
@@ -20,4 +19,32 @@ function getCart() {
 }
 
 // Export functions
-export { addToCart, getCart, setCartIconCallback };
+export { addToCart, getCart };
+
+
+
+// import { getCartFromLocalStorage, saveCartToLocalStorage } from "./storage.js";
+
+// let cart = getCartFromLocalStorage();
+// let cartIconCallback = null;
+
+// function setCartIconCallback(callback) {
+//     cartIconCallback = callback;
+// }
+
+// function addToCart(item) {
+//     cart.push(item);
+//     console.log(`Added "${item.name}" to the cart.`);
+//     saveCartToLocalStorage(cart);
+
+//     if (cartIconCallback) {
+//         cartIconCallback(cart.length);
+//     }
+// }
+
+// function getCart() {
+//     return cart;
+// }
+
+// // Export functions
+// export { addToCart, getCart, setCartIconCallback };

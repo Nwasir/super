@@ -1,6 +1,6 @@
 // marketFunctions.js
-import { addToCart, setCartIconCallback } from "./add-to-cart.js";
-import { updateCartIcon } from "./cart-icon.js";
+import { addToCart } from "./add-to-cart.js";
+import { updateCartCount } from "./cart-icon.js";
 
 async function displayItems(data, container) {
     data.clothing.forEach((item) => {
@@ -52,7 +52,6 @@ async function getItems(url) {
         return null;
     }
 }
-
 // Export functions
 export { displayItems, getItems };
-setCartIconCallback(updateCartIcon);
+
