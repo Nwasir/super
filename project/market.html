@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jimex Collection</title>
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
     <script defer src="scripts/hamburger.js"></script>
     <script type="module" src="scripts/cart-icon.js" defer></script>
     <script type="module" src="scripts/add-to-cart.js" defer></script>
@@ -39,9 +39,8 @@
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
-                <div>
+                <div id="cart-icon-container">
                     <img src="images/cart.png" alt="cart logo" id="cart-icon" width="50" height="50">
-                    <!-- <div id="cart-icon"></div> -->
                     <span id="cart-count">0</span>
                 </div>
             </div>
@@ -50,21 +49,24 @@
             <h2>Select your outfit</h2>
             <div id="sortBy">
                 <p><strong>Select base on price:</strong></p>
-                <label><input type="radio" id="shirt" name="clothing" value="shirt">shirt</label>
-                <label><input type="radio" id="suit" name="clothing" value="suit">suit</label>
-                <label><input type="radio" id="agbada" name="clothing" value="agbada">Agbada</label>
-                <label><input type="radio" id="trousers" name="clothing" value="trousers">Trousers</label>
-                <label><input type="radio" id="senator" name="clothing" value="senator">Senator</label>
-                <label><input type="radio" id="shoes" name="clothing" value="shoes">Shoes</label>
-                <label><input type="radio" id="all" name="clothing" value="all">All</label>
-            </div><br>
+                <label><input type="radio" id="shirt" name="clothing" value="shirt" />shirt</label>
+                <label><input type="radio" id="suit" name="clothing" value="suit" />suit</label>
+                <label><input type="radio" id="agbada" name="clothing" value="agbada" />Agbada</label>
+                <label><input type="radio" id="trousers" name="clothing" value="trousers" />Trousers</label>
+                <label><input type="radio" id="senator" name="clothing" value="senator" />Senator</label>
+                <label><input type="radio" id="shoes" name="clothing" value="shoes" />Shoes</label>
+                <label><input type="radio" id="all" name="clothing" value="all" />All</label>
+            </div>
+            <br />
             <div id="outfit"></div>
         </main>
-      
-        <footer>
-            &copy;<span id="year"></span> Nnanna Arua Uko
-        </footer>
+
+        <footer>&copy;<span id="year"></span> Nnanna Arua Uko</footer>
+
         <script>
+            function navigateToCartItems() {
+                window.location.href = "cart-items.html";
+            }
             document.querySelector("#year").innerHTML = new Date().getFullYear();
         </script>
     </div>

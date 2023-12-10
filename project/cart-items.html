@@ -1,0 +1,57 @@
+<!-- cartItems.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Items</title>
+    <script type="module" src="scripts/cart-items.js" defer></script>
+    <script defer src="scripts/hamburger.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="one">
+                <picture class="logo"><a href="index.html"><img src="images/logo.PNG" alt="logo" width="60"
+                            height="60" /></a></picture>
+                <div>
+                    <h2>JCS</h2>
+                </div>
+            </div>
+
+            <nav>
+                <button id="hamburgerBtn">
+                    <span>&#9776;</span><span>x</span>
+                </button>
+
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="market.html">Market</a></li>
+
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div>
+                <img src="images/cart.png" alt="cart logo" id="cart-icon" width="50" height="50">
+                <!-- <div id="cart-icon"></div> -->
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <h1>Your Cart Items</h1>
+
+    <ul id="cart-items-list"></ul>
+
+    <footer>
+        &copy;<span id="year"></span> Nnanna Arua Uko
+    </footer>
+    <script>
+        document.querySelector("#year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

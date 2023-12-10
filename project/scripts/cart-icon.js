@@ -2,19 +2,50 @@
 import { getCartFromLocalStorage } from "./storage.js";
 
 let cartCountElement = null;
+let cartIconElement = null;
 
-function setCartCountElement(countElement) {
+function setCartCountElement(element, countElement) {
+    cartIconElement = element;
     cartCountElement = countElement;
+
+     // Add a click event listener to navigate to the cart page
+    if (cartIconElement) {
+        cartIconElement.addEventListener("click", handleCartIconClick);
+    }
 }
 
 function updateCartCount() {
     const cart = getCartFromLocalStorage();
     const count = cart.length;
 
-    if (cartCountElement) {
+    if (cartIconElement && cartCountElement) {
+         // Update the cart icon dynamically
+        const cartIconImage = document.createElement("img");
+        cartIconImage.src = "images/cart.png"; // Replace with the actual path to your cart icon
+        cartIconImage.alt = "cart logo";
+        cartIconImage.width = 50;
+        cartIconImage.height = 50;
+
         // Update the cart count
         cartCountElement.textContent = count;
+
+         // Clear the existing content and append the updated content
+        cartIconElement.innerHTML = "";
+        cartIconElement.appendChild(cartIconImage);
+        cartIconElement.appendChild(cartCountElement);
     }
+}
+function handleCartIconClick() {
+    // Increment the cart count when the cart icon is clicked
+    const cart = getCartFromLocalStorage();
+    cart.push({ name: "Sample Item" }); // Add a sample item, you can modify this based on your actual items
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    // Update the cart icon
+    updateCartCount();
+
+    // Navigate to the cart items page
+    window.location.href = "cartItems.html";
 }
 
 // Export functions
