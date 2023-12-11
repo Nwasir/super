@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart Items</title>
+    <title>Order Summary</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script type="module" src="scripts/cart-items.js" defer></script>
+    <script type="module" src="scripts/summary.js" defer></script>
     <script defer src="scripts/hamburger.js"></script>
 </head>
 
@@ -31,8 +31,8 @@
 
                     <ul id="primaryNav">
                         <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="market.html">Market</a></li>
-
+                        <li><a href="market.html">Market</a></li>
+                        <li class="active"><a href="summary.html">Summary</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
@@ -42,19 +42,17 @@
                 </div>
             </div>
         </header>
-
-        <h1>Your Items</h1>
-        <div>
-            <div id="cart-items-list"></div>
+        <hr>
+        <div id="summary-section">
+            <h2>Selected Items</h2>
+            <ul id="selected-items-list"></ul>
+            <p id="total-price">Total Price: $0.00</p>
+            <button id="purchase-button">Purchase</button>
         </div>
-        <div id="cart-actions">
-            <button id="clear-cart">Clear Cart</button>
-            <button id="place-order">Place Order</button>
-        </div><br><br>
+        <hr>
+        <footer>&copy;<span id="year"></span> Nnanna Arua Uko</footer>
 
-        <footer>
-            &copy;<span id="year"></span> Nnanna Arua Uko
-        </footer>
+        <script type="module" src="scripts/summary.js" defer></script>
         <script>
             document.querySelector("#year").innerHTML = new Date().getFullYear();
         </script>

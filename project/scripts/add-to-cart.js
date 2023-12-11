@@ -1,25 +1,17 @@
-// addToCart.js
 
+// add-to-cart.js
 import { getCartFromLocalStorage, saveCartToLocalStorage } from "./storage.js";
 import { updateCartCount } from "./cart-icon.js";
 
-let cart = getCartFromLocalStorage();
-
-function addToCart(item) {
-    cart.push(item);
-    console.log(`Added "${item.name}" to the cart.`);
+function addToCart(product) {
+    const cart = getCartFromLocalStorage();
+    cart.push(product);
     saveCartToLocalStorage(cart);
-
-    // Trigger cart count update
     updateCartCount();
 }
 
-function getCart() {
-    return cart;
-}
+export { addToCart };
 
-// Export functions
-export { addToCart, getCart };
 
 
 

@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart Items</title>
+    <title>Success</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script type="module" src="scripts/cart-items.js" defer></script>
+    <!-- <script type="module" src="scripts/order-form.js" defer></script> -->
     <script defer src="scripts/hamburger.js"></script>
 </head>
 
@@ -31,7 +31,8 @@
 
                     <ul id="primaryNav">
                         <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="market.html">Market</a></li>
+                        <li><a href="market.html">Market</a></li>
+                        <li class="active"><a href="success.html">Success</a></li>
 
                         <li><a href="#">Contact Us</a></li>
                     </ul>
@@ -42,16 +43,10 @@
                 </div>
             </div>
         </header>
-
-        <h1>Your Items</h1>
-        <div>
-            <div id="cart-items-list"></div>
+        <div id="content">
+            <h1>Your order has been places successfully!</h1>
+            <p>Thank you for your purchase. We will process your order shortly and hope to see you again</p>
         </div>
-        <div id="cart-actions">
-            <button id="clear-cart">Clear Cart</button>
-            <button id="place-order">Place Order</button>
-        </div><br><br>
-
         <footer>
             &copy;<span id="year"></span> Nnanna Arua Uko
         </footer>

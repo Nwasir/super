@@ -128,7 +128,7 @@ animation
   opacity: 1;
 }
 /* ******market page***** */
-#outfit {
+#outfit, #cart-items-list ul{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: .5rem;
@@ -136,7 +136,7 @@ animation
   margin-bottom: 3rem;
 }
 
-#outfit section {
+#outfit section, #cart-items-list li{
   height: 350px;
   width: 230px;
   margin: .5rem;
@@ -149,7 +149,7 @@ animation
   justify-content: center;
 }
 
-#outfit img {
+#outfit img, #cart-items-list img {
   width: 200px;
   height: 250px;
   box-shadow: 0 0 30px #777;

@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart Items</title>
+    <title>Order Form</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script type="module" src="scripts/cart-items.js" defer></script>
+    <script type="module" src="scripts/order-form.js" defer></script>
     <script defer src="scripts/hamburger.js"></script>
 </head>
 
@@ -31,8 +31,8 @@
 
                     <ul id="primaryNav">
                         <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="market.html">Market</a></li>
-
+                        <li><a href="market.html">Market</a></li>
+                        <li class="active"><a href="order-form.html">Order Form</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
@@ -41,16 +41,28 @@
                     <span id="cart-count">0</span>
                 </div>
             </div>
-        </header>
-
-        <h1>Your Items</h1>
+        </header><hr>
         <div>
-            <div id="cart-items-list"></div>
+            <h1>Order Form</h1><hr>
+            <form id="order-form" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea><br>
+
+                <label for="credit-card">Credit Card:</label>
+                <input type="text" id="credit-card" name="credit-card" required placeholder="xxxx xxxx xxxx xxxx"><br>
+
+                <label for="expiry-date">Card Expiry Date (MM/YYYY):</label>
+                <input type="date" id="expiry-date" name="expiry-date" placeholder="MM/YYYY" required><br>
+
+                <button type="submit">Submit Order</button>
+            </form>
         </div>
-        <div id="cart-actions">
-            <button id="clear-cart">Clear Cart</button>
-            <button id="place-order">Place Order</button>
-        </div><br><br>
 
         <footer>
             &copy;<span id="year"></span> Nnanna Arua Uko

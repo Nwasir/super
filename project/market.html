@@ -35,12 +35,11 @@
                     <ul id="primaryNav">
                         <li><a href="index.html">Home</a></li>
                         <li class="active"><a href="market.html">Market</a></li>
-
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
                 <div id="cart-icon-container">
-                    <img src="images/cart.png" alt="cart logo" id="cart-icon" width="50" height="50">
+                    <img src="images/cart.png" alt="cart logo" id="cart-icon-image" width="50" height="50" />
                     <span id="cart-count">0</span>
                 </div>
             </div>
@@ -64,9 +63,6 @@
         <footer>&copy;<span id="year"></span> Nnanna Arua Uko</footer>
 
         <script>
-            function navigateToCartItems() {
-                window.location.href = "cart-items.html";
-            }
             document.querySelector("#year").innerHTML = new Date().getFullYear();
         </script>
     </div>
