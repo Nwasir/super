@@ -1,49 +1,35 @@
-const url = "https://run.mocky.io/v3/78e95997-f1be-4719-a0a5-036fb2c5af67";
+  // Array of image sources
+  const images = [
+    "images/agbada1.jpg",
+    "images/agbada8.jpg",
+    "images/shirt1.jpg",
+    "images/shirt9.jpg",
+    "images/suit1.jpg",
+    "images/suit7.jpg",
+    "images/shoe6.jpg",
+    "images/shoe1.jpg",
+    "images/trousers2.jpg",
+    "images/trousers7.jpg"
+];
 
-export async function fetchImages() {
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      console.log(url);
-      return data.images;
-    } catch (error) {
-      console.error("Error fetching images:", error);
-      return [];
-    }
-  }
-  
-  export function initializeAnimation(images) {
-    const animationContainer = document.querySelector("#animation");
-    let currentIndex = 0;
-  
-    images.forEach((imageUrl, index) => {
-      const img = document.createElement("img");
-      img.src = imageUrl;
-      img.alt = `Image ${index + 1}`;
-      img.classList.add("image");
-      if (index === 0) {
-        img.classList.add("active");
-      }
-      animationContainer.appendChild(img);
-    });
-  
-    function showImage(index) {
-      const imageElements = document.querySelectorAll(".image");
-      imageElements.forEach((image, i) => {
-        if (i === index) {
-          image.classList.add("active");
-        } else {
-          image.classList.remove("active");
-        }
-      });
-    }
-  
-    function nextImage() {
-      currentIndex = Math.floor(Math.random() * images.length);
-      showImage(currentIndex);
-    }
-  
-    // Set interval to change image every 3 seconds
-    setInterval(nextImage, 3000);
-  }
-  
+const animationElement = document.getElementById("animation");
+
+// Function to get a random image from the array
+function getRandomImage() {
+    const randomIndex = Math.floor(Math.random() * images.length);
+    return images[randomIndex];
+}
+
+// Function to update the image source in the animation div
+function updateAnimation() {
+    const randomImage = getRandomImage();
+    animationElement.innerHTML = `<img src="${randomImage}" alt="animation">`;
+}
+
+// Function to start the image animation
+function startImageAnimation(intervalTime = 2000) {
+    setInterval(updateAnimation, intervalTime);
+}
+
+// Start the image animation
+startImageAnimation();

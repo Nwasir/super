@@ -149,7 +149,7 @@ animation
   justify-content: center;
 }
 
-#outfit img, #cart-items-list img {
+#outfit img, #cart-items-list img, #animation {
   width: 200px;
   height: 250px;
   box-shadow: 0 0 30px #777;
