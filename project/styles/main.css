@@ -107,8 +107,11 @@ h3, h4, h5 {
   overflow: hidden;
   position: relative;
 }
+#social-media-handle a{
+  display:inline-flex
+}
 
-animation
+/* animation */
 #animation {
   width: 100%;
   height: 100%;
@@ -127,6 +130,7 @@ animation
 .image.active {
   opacity: 1;
 }
+
 /* ******market page***** */
 #outfit, #cart-items-list ul{
   display: grid;
@@ -154,4 +158,13 @@ animation
   height: 250px;
   box-shadow: 0 0 30px #777;
   margin: .5rem;
+}
+#cart-count {
+  border: solid #4c0332 1rem;
+  border-radius: 50%;
+  background-color: #4c0332;
+  color: white;
+  cursor: pointer;
+  margin: 2vw;
+  margin-top: 2rem;
 }
